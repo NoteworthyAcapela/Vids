@@ -79,9 +79,12 @@
       width = width - (width/20);
       height = width * (9/16);
       width = width.toString();
+      if (height < 200){
+        height = 200;
+      }
       height = height.toString();
       width += "px";
-      height = "200px";
+      height += "px";
       document.getElementsByClassName("right")[0].style.right = 0;
     }
     var x = document.getElementsByClassName("widthed");
