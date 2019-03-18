@@ -16,7 +16,6 @@
     p{color: white;}
     .left{
       position: fixed;
-      left: 0;
       width: 30%;
       height: 100%;
     }
@@ -62,11 +61,12 @@
     height = (height/3);
     height = height - (height/18);
     width = (16/9)*height;
-    var offset = width+50;
+    var offset = width+150;
     offset = offset.toString();
     offset += "px";
     if (width <= (window.innerWidth / 2 - 50)){
       document.getElementsByClassName("right")[0].style.left = offset;
+      document.getElementsByClassName("left")[0].style.left = "100px";
       width = width.toString();
       height = height.toString();
       width += "px";
