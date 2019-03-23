@@ -1,34 +1,109 @@
-<!DOCTYPE html>
-<html dark invert style="background-color: #000000">
+<!DOCTYPE html><html dark invert style="background-color: #000000">
+<html>
 <head>
-<title>Fall Jam 2018</title>
-	<link rel="shortcut icon" href="https://NoteworthyAcapella.github.io/nworth-n-w-background.png" />
-<style>
-	h1 {color: #ffffff;}
-  p {color: #fffff0;}
-  a {color: #fffff0;}
-	.home{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 100px;
-    text-align: center;
-  }
-</style>
+  <title>Winter Jam 2019</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <style>
+    @font-face {
+      font-family: Fascinate_Inline;
+      src: url(https://www.noteworthylhs.ml/FascinateInline-Regular.otf)
+    }
+    @font-face{
+      font-family: timeburner;
+      src: url(https://www.noteworthylhs.ml/timeburnerbold.ttf)
+    }
+    h1{color: white; display: inline; font-family: Fascinate_Inline;}
+    h2{color: white; font-family: timeburner; font-size: 1.25em;}
+    p{color: white;}
+    .left{
+      position: absolute;
+      width: 30%;
+      height: 100%;
+    }
+    .right{
+      position: absolute;
+      width: 50%;
+      height: 100%;
+    }
+    .everything{
+      overflow: auto;
+      height: 130%;
+    }
+  </style>
 </head>
 <body>
-	<h1>This is our Fall Jam 2018 performance.</h1>
-  <p>Addicted to You</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/X5VbhmJ4LjQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <p>Lovely</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/upQUsZ2bNBg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <p>Let me Down Slowly</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/EWVe86-bAi4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <div class="home">
-    <a href="https://www.noteworthylhs.ml/Vids">Back to performance list</a>
-    <a href="https://www.noteworthylhs.ml/">
-      <img src="https://www.noteworthylhs.ml/nworth-n-w-background.png"; hight=100px; width=100px; alt="home"></img>
-    </a>
+  <div class="everything">
+    <h1>This is our Winter Jam 2019 performance.</h1>
+    <div class="left">
+      <div class="vid">
+        <iframe class="widthed" src="https://www.youtube.com/embed/X5VbhmJ4LjQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+      <br />
+      <div class="vid">
+        <iframe class="widthed" src="https://www.youtube.com/embed/upQUsZ2bNBg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+      <br />
+      <div class="vid">
+        <iframe class="widthed" src="https://www.youtube.com/embed/EWVe86-bAi4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+    </div>
+    <div class="right">
+      <div class="hello">
+        <h1>Addicted To You</h1>
+        <h2>by Avicii</h2>
+        <p>arranged by Helen Bultman</p>
+        <p>soloed by Veda Nagaraja</p>
+      </div>
+      <div class="hello">
+        <h1>Lovely</h1>
+        <h2>by Billie Eilish (ft. DJ Khalid)</h2>
+        <p>arranged by Veda Nagaraja</p>
+        <p>soloed by Anika Ahuja and Madeline Ellemore</p>
+      </div>
+      <div class="hello">
+        <h1>Let Me Down Slowly</h1>
+        <h2>by Alec Benjamin</h2>
+        <p>arranged by Anika Ahuja</p>
+        <p>soloed by Reed Solomon</p>
+      </div>
+    </div>
   </div>
-  </body>
+  <script>
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    width = window.innerWidth;
+    height = window.innerHeight;
+    width = width/2;
+    width = width - (width/20);
+    height = width * (9/16);
+    width = width.toString();
+    fullHeight = height.toString();
+    width += "px";
+    fullHeight += "px";
+    document.getElementsByClassName("right")[0].style.right = 0;
+    var x = document.getElementsByClassName("widthed");
+    var i;
+    for (i = 0; i < x.length; i++){
+      x[i].style.width = width;
+      x[i].style.height = fullHeight;
+    }
+    if (height < 200){
+      height = 200;
+    }
+    height = height.toString();
+    height += "px";
+    var y = document.getElementsByClassName("hello");
+    for (i = 0; i < y.length; i++){
+      y[i].style.width = width;
+      y[i].style.height = height;
+    }
+    var z = document.getElementsByClassName("vid");
+    for (i = 0; i < z.length; i++){
+      z[i].style.height = height;
+    }
+    //document.getElementById("hi").innerHTML = width;
+    //document.getElementsByClassName("widthed").style.width = width;
+    //document.getElementsByClassName("widthed").style.height = height;
+  </script>
+</body>
 </html>
