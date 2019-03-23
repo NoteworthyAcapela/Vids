@@ -1,34 +1,109 @@
-<!DOCTYPE html>
-<html dark invert style="background-color: #000000">
+<!DOCTYPE html><html dark invert style="background-color: #000000">
+<html>
 <head>
-<title>Winter Jam 2018</title>
-	<link rel="shortcut icon" href="https://NoteworthyAcapella.github.io/nworth-n-w-background.png" />
-<style>
-	h1 {color: #ffffff;}
-	p {color: #fffff0;}
-	a {color: #fffff0;}
-	.home{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 100px;
-    text-align: center;
-  }
-</style>
+  <title>Winter Jam 2018</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <style>
+    @font-face {
+      font-family: Fascinate_Inline;
+      src: url(https://www.noteworthylhs.ml/FascinateInline-Regular.otf)
+    }
+    @font-face{
+      font-family: timeburner;
+      src: url(https://www.noteworthylhs.ml/timeburnerbold.ttf)
+    }
+    h1{color: white; display: inline; font-family: Fascinate_Inline;}
+    h2{color: white; font-family: timeburner; font-size: 1.25em;}
+    p{color: white;}
+    .left{
+      position: absolute;
+      width: 30%;
+      height: 100%;
+    }
+    .right{
+      position: absolute;
+      width: 50%;
+      height: 100%;
+    }
+    .everything{
+      overflow: auto;
+      height: 130%;
+    }
+  </style>
 </head>
 <body>
-	<h1>This is our Winter Jam 2018 performance.</h1>
-  <p>Intro and Shape of You</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6FPqyHtKgOs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <p>Havanna</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/yadXRCL3PvA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <p>Mashup of Rumour Has It and Love Runs Out</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/uk8Fs-P1D-A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <div class="home">
-    <a href="https://www.noteworthylhs.ml/Vids">Back to performance list</a>
-    <a href="https://www.noteworthylhs.ml/">
-      <img src="https://www.noteworthylhs.ml/nworth-n-w-background.png"; hight=100px; width=100px; alt="home"></img>
-    </a>
+  <div class="everything">
+    <h1>This is our Winter Jam 2018 performance.</h1>
+    <div class="left">
+      <div class="vid">
+        <iframe class="widthed" src="https://www.youtube.com/embed/6FPqyHtKgOs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+      <br />
+      <div class="vid">
+        <iframe class="widthed" src="https://www.youtube.com/embed/yadXRCL3PvA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+      <br />
+      <div class="vid">
+        <iframe class="widthed" src="https://www.youtube.com/embed/Fyo-UFIFlVk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+    </div>
+    <div class="right">
+      <div class="hello">
+        <h1>Shape of You</h1>
+        <h2>by Ed Sheeran</h2>
+        <p>arranged by Reed Solomon, Joe Denham and Mor Evron</p>
+        <p>soloed by William Spector</p>
+      </div>
+      <div class="hello">
+        <h1>Havana</h1>
+        <h2>by Camilia Cabello</h2>
+        <p>arranged by Helen Bultman and Madeline Ellemore</p>
+        <p>soloed by William Pullen, Madeline Ellemore and Hannah Oh</p>
+      </div>
+      <div class="hello">
+        <h1>Rumor Has It mashed up with Love Runs Out</h1>
+        <h2>Originals by Adele and OneRepublic</h2>
+        <p>arranged by Juliet Stevenson, Hannah Oh, William Pullen, William Spector, and Veda Nagaraja</p>
+        <p>soloed by Veda Nagaraja and William Pullen</p>
+      </div>
+    </div>
   </div>
-  </body>
+  <script>
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    width = window.innerWidth;
+    height = window.innerHeight;
+    width = width/2;
+    width = width - (width/20);
+    height = width * (9/16);
+    width = width.toString();
+    fullHeight = height.toString();
+    width += "px";
+    fullHeight += "px";
+    document.getElementsByClassName("right")[0].style.right = 0;
+    var x = document.getElementsByClassName("widthed");
+    var i;
+    for (i = 0; i < x.length; i++){
+      x[i].style.width = width;
+      x[i].style.height = fullHeight;
+    }
+    if (height < 200){
+      height = 200;
+    }
+    height = height.toString();
+    height += "px";
+    var y = document.getElementsByClassName("hello");
+    for (i = 0; i < y.length; i++){
+      y[i].style.width = width;
+      y[i].style.height = height;
+    }
+    var z = document.getElementsByClassName("vid");
+    for (i = 0; i < z.length; i++){
+      z[i].style.height = height;
+    }
+    //document.getElementById("hi").innerHTML = width;
+    //document.getElementsByClassName("widthed").style.width = width;
+    //document.getElementsByClassName("widthed").style.height = height;
+  </script>
+</body>
 </html>
