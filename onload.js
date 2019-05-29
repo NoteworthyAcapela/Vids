@@ -1,4 +1,4 @@
-function onload(){
+function sizeVids(){
   var width = window.innerWidth;
   var height = window.innerHeight;
   width = window.innerWidth;
