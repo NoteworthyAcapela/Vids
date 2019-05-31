@@ -1,4 +1,5 @@
 function sizeVids(){
+  alert('ok so this should be working')
   var width = window.innerWidth;
   var height = window.innerHeight;
   width = window.innerWidth;
