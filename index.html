@@ -46,11 +46,12 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="newScript()">
     <h1>Come see our performances:</h1>
     <h2>2019-20</h2>
     <div class="container">
       <a class="btn" href="FallJam2019">Fall Jam 2019</a>
+      <a class="btn" id="fail">Winter Jam 2020</a>
     </div>
     <h2>2018-19</h2>
     <div class="container">
@@ -78,5 +79,11 @@
       <img src="https://www.noteworthylhs.ml/nworth-n-w-background.png"; hight=100px; width=100px; alt="home"></img>
     </a>
   </div>
+  <script>
+    function newScript(){
+      document.getElementById("fail").style.cursor = "not-allowed";
+      document.getElementById("fail").style.backgroundColor = "#ccc";
+    }
+  </script>
   </body>
 </html>  
