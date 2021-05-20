@@ -1,0 +1,87 @@
+<!DOCTYPE html><html dark invert style="background-color: #000000">
+<html>
+<head>
+  <title>April Jam 2021</title>
+  <script type="text/javascript" src="sizer.js"></script>
+  <style>
+    @font-face {
+      font-family: Fascinate_Inline;
+      src: url(https://www.noteworthylhs.ml/FascinateInline-Regular.otf)
+    }
+    @font-face{
+      font-family: timeburner;
+      src: url(https://www.noteworthylhs.ml/timeburnerbold.ttf)
+    }
+    h1{color: white; display: inline; font-family: Fascinate_Inline;}
+    h2{color: white; font-family: timeburner; font-size: 1.25em;}
+    p{color: white;}
+    a{color: white;}
+    .left{
+      position: absolute;
+      width: 30%;
+      height: 100%;
+    }
+    .right{
+      position: absolute;
+      width: 50%;
+      height: 100%;
+    }
+    .everything{
+      overflow: auto;
+      height: 130%;
+    }
+    .footer{
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 100px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="everything">
+    <h1>This is our April Jam 2021 performance.</h1>
+    <div class="left">
+      <div class="vid">
+        <iframe class="widthed" src="https://www.youtube.com/embed/z-O5mjFiaXA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+      <br />
+      <div class="vid">
+        <iframe class="widthed" src="https://www.youtube.com/embed/CWArHsBxJNM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+      <br />
+      <div class="vid">
+        <iframe class="widthed" src="https://www.youtube.com/embed/n1-zoTfOtGg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+      </div>
+    </div>
+    <div class="right">
+      <div class="hello">
+        <h1>Blue World</h1>
+        <h2>by The Four Freshmen</h2>
+        <p>arranged by Eva Molla</p>
+      </div>
+      <div class="hello">
+        <h1>Better Off</h1>
+        <h2>by Jeremy Zucker and Chelsea Cutler</h2>
+        <p>arranged by Eva Molla and Anika Ahuja</p>
+        <p>soloed by Reed Soloman and Zoe Zachary</p>
+      </div>
+      <div class="hello">
+        <h1>Imagine Dragons Medley</h1>
+        <h2>including songs by Imagine Dragons</h2>
+        <p>arranged by Zenon Perros</p>
+        <p>soloed by Maddie Lucente, Jiji Janpathompong, Eva Molla, Anika Ahuja, and Zoe Zachary</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <a href=".">
+      Back to performance list
+    </a>
+    <a href="https://www.noteworthylhs.ml/">
+      <img src="https://www.noteworthylhs.ml/nworth-n-w-background.png"; hight=100px; width=100px; alt="home"></img>
+    </a>
+  </div>
+</body>
+</html>
